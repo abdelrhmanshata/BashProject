@@ -226,7 +226,7 @@ entryNewValue(){
 			
 		else
 			echo -e "\e[31mError : DataType Must be Integer\e[0m"	
-			getNewValue		
+			entryNewValue		
 		fi
 	elif [[ $getColumnDataType =~ ^str$ ]];then
 		if [[ $entryValue =~ ^[a-zA-Z][a-zA-Z0-9_]+$ ]];then
